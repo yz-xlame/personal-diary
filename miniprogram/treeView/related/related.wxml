@@ -1,0 +1,11 @@
+<view class="related-pannel">
+    <scroll-view scroll-x scroll-y class="scrrolling">
+        <view class="related-tree">
+            <view class="related-tree__content">
+                <related-item
+                    tree="{{tree}}"
+                />
+            </view>
+        </view>
+    </scroll-view>
+</view>

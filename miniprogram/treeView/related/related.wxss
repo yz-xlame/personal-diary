@@ -1,0 +1,16 @@
+.related-pannel,
+.scrrolling {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.related-tree {
+    display: inline-flex;
+    justify-content: center;
+    min-width: 100vw;
+}
+
+.related-tree__content {
+    display: inline-flex;
+}

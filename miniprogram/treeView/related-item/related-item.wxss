@@ -1,0 +1,90 @@
+.related-item,
+.related-item__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.related-item__content {
+    padding: 20rpx;
+    width: 220rpx;
+    box-sizing: border-box;
+    border: 1rpx solid #eee;
+}
+
+.related-item__avatar {
+    position: absolute;
+    top: -60rpx;
+    left: 74rpx;
+    width: 72rpx;
+    height: 72rpx;
+    border: 2rpx solid #000;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.related-item__name,
+.related-item__position {
+    width: 100%;
+}
+
+.owner-name,
+.owner-position {
+    font-size: .875rem;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.related-item__position {
+    font-size: .75rem;
+}
+
+.related-item__employee {
+    margin-top: 120rpx;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.related-item__employee::before {
+    content: '';
+    position: absolute;
+    top: -120rpx;
+    left: calc(50% - 1rpx);
+    width: 2rpx;
+    height: 30rpx;
+    background-color: #000;
+}
+
+.related-item__employee .related-item::before {
+    content: '';
+    position: absolute;
+    top: -88rpx;
+    left: calc(50% - 1rpx);
+    width: 2rpx;
+    height: 30rpx;
+    background-color: #000;
+}
+
+.related-item__employee .related-item:not(.end) {
+    margin-right: 50rpx;
+}
+
+.related-item__employee .line {
+    position: absolute;
+    top: -90rpx;
+    left: 50%;
+    height: 2rpx;
+    transform: translate(-50%);
+    background-color: #000;
+}
+
+.root {
+    margin-top: 120rpx;
+}
