@@ -17,16 +17,12 @@
     </view>
     <block wx:if="{{tree.employee.length > 0}}">
         <view class="related-item__employee">
-            <view
-                class="line"
-                style="width: calc(100% - (100% - 270rpx * {{tree.employee.length - 1}} - 220rpx) / {{tree.employee.length}} - 220rpx)"
-            >
-            </view>
             <related-item
                 wx:for="{{tree.employee}}"
                 wx:key="index"
                 tree="{{item}}"
                 isLast="{{tree.employee.length - 1 == index}}"
+                isFirst="{{0 == index}}"
                 depth="{{depth + 1}}"
             />
         </view>

@@ -16,5 +16,9 @@ Component({
             type: Boolean,
             value: false
         },
+        isFirst: {
+            type: Boolean,
+            value: false
+        },
     },
 })
